@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding : 0
+}
+body{
+  font-family:"outfit";
+  height: 100vh;
+  overflow-x: hidden;
+ 
+}
+.default-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to bottom, #518453, #506a80);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}

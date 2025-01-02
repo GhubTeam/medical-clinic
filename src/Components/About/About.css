@@ -1,0 +1,309 @@
+.about {
+    display: flex;
+    padding: 5rem;
+    margin: 80px;
+    gap: 300px;
+    background-color: whitesmoke;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+}
+
+.about-left h1 {
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: rgb(4, 4, 61);
+}
+
+.about-left button {
+    margin-top: 20px;
+    width: auto;
+    align-self: flex-start;
+}
+
+.about-left p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.about-right {
+    position: relative;
+}
+
+.about-images {
+    position: relative;
+}
+
+.doctor-1 {
+    width: 350px;
+    height: 400px;
+    z-index: 1;
+}
+
+.doctor-2 {
+    position: absolute;
+    top: 80px;
+    left: -150px;
+    width: 220px;
+    z-index: 2;
+}
+
+.about-us {
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    margin: 200px;
+    color: #fff;
+}
+
+.about-us img {
+    width: 500px;
+    z-index: 1;
+}
+
+.abt-why-us {
+    background-color: rgb(5, 64, 109);
+    position: absolute;
+    z-index: 2;
+    right: 150px;
+    top: 100px;
+    width: 400px;
+    height: 300px;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.abt-why-us h1 {
+    margin-bottom: 30px;
+}
+
+.abt-why-us ol {
+    list-style-type: none;
+    padding-left: 30px;
+    counter-reset: item;
+}
+
+.abt-why-us ol li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.abt-why-us ol li::before {
+    content: counter(item);
+    counter-increment: item;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: grey;
+    margin-right: 15px;
+}
+
+.abt-why-us ol li .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.abt-why-us ol li span {
+    color: rgb(69, 189, 69);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.abt-why-us ol li p {
+    font-size: 13px;
+    color: white;
+    margin-top: 2px;
+}
+
+/* Large Screens (1200px and up) */
+@media (max-width: 1400px) {
+    .about {
+        gap: 150px;
+        margin: 60px;
+    }
+    
+    .doctor-2 {
+        left: -100px;
+    }
+    
+    .about-us {
+        margin: 150px;
+    }
+    
+    .abt-why-us {
+        right: 100px;
+    }
+}
+
+/* Desktop (992px to 1199px) */
+@media (max-width: 1199px) {
+    .about {
+        padding: 4rem;
+        margin: 40px;
+        gap: 100px;
+    }
+    
+    .doctor-1 {
+        width: 300px;
+        height: 350px;
+    }
+    
+    .doctor-2 {
+        width: 180px;
+        left: -80px;
+    }
+    
+    .about-us {
+        margin: 100px;
+    }
+    
+    .about-us img {
+        width: 400px;
+    }
+    
+    .abt-why-us {
+        width: 350px;
+        right: 50px;
+        padding: 40px;
+    }
+}
+
+/* Tablet Landscape (768px to 991px) */
+@media (max-width: 991px) {
+    .about {
+        flex-direction: column;
+        padding: 3rem;
+        margin: 30px;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .about-left {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about-left button {
+        align-self: center;
+    }
+    
+    .about-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .about-us {
+        margin: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-us img {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .abt-why-us {
+        position: relative;
+        right: auto;
+        top: -50px;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet Portrait and Mobile (767px and below) */
+@media (max-width: 767px) {
+    .about {
+        padding: 2rem;
+        margin: 20px;
+    }
+    
+    .about-left h1 {
+        font-size: 32px;
+    }
+    
+    .doctor-1 {
+        width: 250px;
+        height: 300px;
+    }
+    
+    .doctor-2 {
+        width: 150px;
+        top: 60px;
+        left: -50px;
+    }
+    
+    .about-us {
+        margin: 30px;
+    }
+    
+    .abt-why-us {
+        padding: 30px;
+        height: auto;
+    }
+    
+    .abt-why-us ol {
+        padding-left: 15px;
+    }
+    
+    .abt-why-us ol li::before {
+        font-size: 2.5rem;
+    }
+    
+    .abt-why-us ol li span {
+        font-size: 18px;
+    }
+}
+
+/* Mobile Small (480px and below) */
+@media (max-width: 480px) {
+    .about {
+        padding: 1.5rem;
+        margin: 10px;
+    }
+    
+    .about-left h1 {
+        font-size: 28px;
+    }
+    
+    .doctor-1 {
+        width: 200px;
+        height: 240px;
+    }
+    
+    .doctor-2 {
+        width: 120px;
+        left: -30px;
+    }
+    
+    .about-us {
+        margin: 20px;
+    }
+    
+    .abt-why-us {
+        padding: 20px;
+    }
+    
+    .abt-why-us ol li::before {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+    
+    .abt-why-us ol li span {
+        font-size: 16px;
+    }
+    
+    .abt-why-us ol li p {
+        font-size: 12px;
+    }
+}
