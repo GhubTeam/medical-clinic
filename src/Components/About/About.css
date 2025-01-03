@@ -122,7 +122,6 @@
     margin-top: 2px;
 }
 
-/* Large Screens (1200px and up) */
 @media (max-width: 1400px) {
     .about {
         gap: 150px;
@@ -142,7 +141,6 @@
     }
 }
 
-/* Desktop (992px to 1199px) */
 @media (max-width: 1199px) {
     .about {
         padding: 4rem;
@@ -175,7 +173,6 @@
     }
 }
 
-/* Tablet Landscape (768px to 991px) */
 @media (max-width: 991px) {
     .about {
         flex-direction: column;
@@ -221,7 +218,6 @@
     }
 }
 
-/* Tablet Portrait and Mobile (767px and below) */
 @media (max-width: 767px) {
     .about {
         padding: 2rem;
@@ -265,7 +261,6 @@
     }
 }
 
-/* Mobile Small (480px and below) */
 @media (max-width: 480px) {
     .about {
         padding: 1.5rem;
