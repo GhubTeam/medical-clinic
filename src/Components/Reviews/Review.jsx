@@ -25,10 +25,11 @@ const Review = () => {
       <div className="review-container">
         <div className="review-content">
           <h2>
-            Thoughts From
+            Words From
             <br />
-            Our Best Patients
+            Our Amazing Patients
           </h2>
+
           <p className="review-subtitle">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.

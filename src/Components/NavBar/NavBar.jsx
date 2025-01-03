@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import "./NavBar.css";
 import Logo from "../../assets/logo.jpg";
 
@@ -29,29 +30,78 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <img src={Logo} alt="Logo" className="logo" />
-        <button className="mobile-menu-button" onClick={toggleMenu}>
+        <Link to="hero" smooth={true} duration={500}>
+          <img src={Logo} alt="Logo" className="logo" />
+        </Link>
+        <button
+          className="mobile-menu-button"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle menu"
+        >
           <span className={`hamburger ${isMenuOpen ? "open" : ""}`}></span>
         </button>
 
-        
         <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-          <a href="#" className="nav-link">
+          <Link
+            to="hero"
+            smooth={true}
+            duration={500}
+            className="nav-link"
+            onClick={() => setIsMenuOpen(false)}
+          >
             Home
-          </a>
-          <a href="#" className="nav-link">
+          </Link>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="nav-link"
+            offset={-50}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About Us
+          </Link>
+          <Link
+            to="services-section"
+            smooth={true}
+            duration={500}
+            className="nav-link"
+            offset={-50}
+            onClick={() => setIsMenuOpen(false)}
+          >
             Services
-          </a>
-          <a href="#" className="nav-link">
-            Find a Doctor
-          </a>
-          <a href="#" className="nav-link">
+          </Link>
+          <Link
+            to="review-section"
+            smooth={true}
+            duration={500}
+            className="nav-link"
+            offset={-50}
+            onClick={() => setIsMenuOpen(false)}
+          >
             Testimonials
-          </a>
-          <a href="#" className="nav-link">
+          </Link>
+          <Link
+            to="team"
+            smooth={true}
+            duration={500}
+            className="nav-link"
+            offset={-50}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Our Team
+          </Link>
+          <Link
+            to="contact-section"
+            smooth={true}
+            duration={500}
+            className="book-button"
+            offset={-50}
+            onClick={() => setIsMenuOpen(false)}
+          >
             Contact Us
-          </a>
-          <button className="book-button">Book Appointment</button>
+          </Link>
         </div>
       </div>
     </nav>
