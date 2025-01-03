@@ -30,7 +30,7 @@ const Contact = () => {
               We&apos;d love to hear from you! Click below to fill out our contact
               form.
             </p>
-            <button onClick={handleFormClick} className="default-button">
+            <button onClick={handleFormClick} className=" form-button default-button">
               Contact Form
             </button>
           </div>

@@ -136,7 +136,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  width: 200px;
+  width: 150px;
   height: 50px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -172,6 +172,20 @@
     right: 24px;
   }
 }
+@media (max-width: 1024px) {
+  .review-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .review-content h2 {
+    font-size: 2rem;
+  }
+
+  .review-stats {
+    right: 24px;
+  }
+}
 
 @media (max-width: 768px) {
   .review-section {
@@ -192,5 +206,14 @@
     bottom: 0;
     margin-top: 24px;
     display: inline-flex;
+  }
+
+  .review-container {
+    grid-template-columns: 1fr;
+    padding: 0 15px; 
+  }
+
+  .review-content, .review-carousel {
+    width: 100%; 
   }
 }

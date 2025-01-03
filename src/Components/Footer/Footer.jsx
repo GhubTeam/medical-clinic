@@ -1,15 +1,15 @@
 import "./Footer.css";
-import logo from "../../assets/logo.jpg"
+import { Link } from "react-scroll";
+import Logo from "../../assets/logo.jpg"
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-      
           <div className="footer-section">
-            <div className="logo-container">
-              <img src= {logo} alt="logo-icon" className="logo-icon" />
-            </div>
+            <Link to="hero" smooth={true} duration={500}>
+              <img src={Logo} alt="Logo" className="logo-icon" />
+            </Link>
             <p className="footer-description">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by

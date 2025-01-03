@@ -14,7 +14,7 @@
 }
 
 .navbar-container {
-  max-width: 1200px;
+  max-width: 100%; 
   height: 40px;
   margin: 0 auto;
   padding: 1rem 2rem;
@@ -24,9 +24,8 @@
 }
 
 .logo {
-  width: 150px;
-  height: 70px;
-  padding: 60px;
+  width: 120px; 
+  height: 56px; 
 }
 
 .nav-links {
@@ -131,7 +130,7 @@
   .navbar-container {
     padding: 1rem;
   }
-  
+
   .nav-links {
     gap: 1.5rem;
   }
@@ -139,7 +138,7 @@
 
 @media (max-width: 768px) {
   .navbar-container {
-    height: auto;
+    height: 70px;
   }
 
   .mobile-menu-button {
@@ -186,4 +185,8 @@
     width: 100%;
     padding-top: 100px;
   }
+}
+
+body {
+  overflow-x: hidden; 
 }
